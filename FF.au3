@@ -405,7 +405,7 @@ EndFunc   ;==>_FFClick
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFDialogWait
 ; Description ...: Waits for a browser-dialog-message (e.g. alert) and closes it.
-; Beschreibung ..: Wartet auf ein Dialog-Fenster (z.B.: alert) und schlieÃŸt es.
+; Beschreibung ..: Wartet auf ein Dialog-Fenster (z.B.: alert) und schließt es.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFDialogWait($sText[, $sTitle = ""[, $sClose = "close"[, $iTimeOut = 10000]]])
 ; Parameter(s): .: $sText       - Text in the dialog (substring)
@@ -748,7 +748,7 @@ EndFunc   ;==>_FFLinkClick
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFFrameLeave
 ; Description ...: Leaves the currently entered frame
-; Beschreibung ..: VerlÃ¤ÃŸt den aktuellen Frame
+; Beschreibung ..: Verläßt den aktuellen Frame
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFFrameLeave()
 ; Parameter(s): .:
@@ -780,7 +780,7 @@ EndFunc   ;==>_FFFrameLeave
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFFrameEnter
 ; Description ...: Selects a frame, which all subsequent commands apply on.
-; Beschreibung ..: WÃ¤hlt einen Frame aus, auf den alle nachfolgenden Befehle wirken.
+; Beschreibung ..: Wählt einen Frame aus, auf den alle nachfolgenden Befehle wirken.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFFrameEnter($vFrame[, $sMode = "index"])
 ; Parameter(s): .: $vFrame      - Frame name or id or number in index mode
@@ -839,7 +839,7 @@ EndFunc   ;==>_FFFrameEnter
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFGetLength
 ; Description ...: Returns the length of the elements in $sMode
-; Beschreibung ..: Gibt die Anzahl der angegebenen Elemente zurÃ¼ck.
+; Beschreibung ..: Gibt die Anzahl der angegebenen Elemente zurück.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFGetLength([$sMode = "links"])
 ; Parameter(s): .: $sMode       - Optional: (Default = "links") :
@@ -902,7 +902,7 @@ EndFunc   ;==>_FFGetLength
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFLinksGetAll
 ; Description ...: Returns an array with informations about all existing links.
-; Beschreibung ..: Gibt ein Array mit Informationen Ã¼ber alle vorhandenen Links zurÃ¼ck.
+; Beschreibung ..: Gibt ein Array mit Informationen über alle vorhandenen Links zurück.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFLinksGetAll()
 ; Parameter(s): .:
@@ -1145,7 +1145,7 @@ EndFunc   ;==>_FFIsConnected
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFFormCheckBox
 ; Description ...: Checks or unchecks a CheckBox in a form.
-; Beschreibung ..: WÃ¤hlt eine Checkbox an oder ab.
+; Beschreibung ..: Wählt eine Checkbox an oder ab.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFFormCheckBox($vBox[, $bChecked = True[, $iBoxNameIndex = 0[, $sBoxMode = "index"[, $vForm = 0[, $sFormMode = "index"[, $bCheckBox = True]]]]]])
 ; Parameter(s): .: $vBox        - Index name, id or value of the CheckBox
@@ -1250,7 +1250,7 @@ EndFunc   ;==>_FFFormCheckBox
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFFormGetElementsLength
 ; Description ...: Length of the form elements
-; Beschreibung ..: Gibt die Anzahl der Elemente eines Formulars zurÃ¼ck.
+; Beschreibung ..: Gibt die Anzahl der Elemente eines Formulars zurück.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFFormGetElementsLength([$vForm = 0[, $sMode = "index"]])
 ; Parameter(s): .: $vForm       - Optional: (Default = 0) : Index (0-n), name or id
@@ -1310,7 +1310,7 @@ EndFunc   ;==>_FFFormGetElementsLength
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFFormOptionSelect
 ; Description ...: Selects an element of an OptionSelect.
-; Beschreibung ..: WÃ¤hlt ein Element eines OptionSelect aus.
+; Beschreibung ..: Wählt ein Element eines OptionSelect aus.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFFormOptionSelect([$vElement = 0[, $sElementMode = "index"[, $vOption = 0[, $sOptionMode = "index"[, $vForm = 0[, $sFormMode = "index"]]]]]])
 ; Parameter(s): .: $vElement    - Optional: (Default = 0) : index (0-n), name, id
@@ -1417,7 +1417,7 @@ EndFunc   ;==>_FFFormOptionSelect
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFFormRadioButton
 ; Description ...: Selects a RadioButton in a form
-; Beschreibung ..: WÃ¤hlt einen RadioButton aus.
+; Beschreibung ..: Wählt einen RadioButton aus.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFFormRadioButton($vRadioButton[, $iRadioButtonIndex = 0[, $sRadioButtonMode = "index"[, $vForm = 0[, $sFormMode = "index"]]]])
 ; Parameter(s): .: $vRadioButton - name, id or value
@@ -1449,7 +1449,7 @@ EndFunc   ;==>_FFFormRadioButton
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFFormReset
 ; Description ...: Resets a form
-; Beschreibung ..: Setzt ein Formular zurÃ¼ck.
+; Beschreibung ..: Setzt ein Formular zurück.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFFormReset([$vForm = 0[, $sMode = "index"]])
 ; Parameter(s): .: $vForm       - Optional: (Default = 0) : Index (0-n), name, id
@@ -1819,7 +1819,7 @@ EndFunc   ;==>_FFLoadWait
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFGetObjectInfo
 ; Description ...: Returns a 2-dimensional array with every information of an object.
-; Beschreibung ..: Liefert ein 2-dimensionales Array mit allen Informationen Ã¼ber ein Objekt.
+; Beschreibung ..: Liefert ein 2-dimensionales Array mit allen Informationen über ein Objekt.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFGetObjectInfo([$sObject = "window"])
 ; Parameter(s): .: $sObject     - Optional: (Default = "window") :
@@ -1858,7 +1858,7 @@ EndFunc   ;==>_FFGetObjectInfo
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFGetPosition
 ; Description ...: Returns an array with the position of an element and/or the position and size of the FireFox content area, relative to the client area of the window
-; Beschreibung ..: Liefert ein Array mit der Position eines Elementes und/oder die Position und GrÃ¶ÃŸe des FireFox-Inhalts, relativ zur Client Area des Fensters
+; Beschreibung ..: Liefert ein Array mit der Position eines Elementes und/oder die Position und Größe des FireFox-Inhalts, relativ zur Client Area des Fensters
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFGetPosition([$sElement = ""])
 ; Parameter(s): .: $sElement    - Optional: (Default = "") : Element or FFau3 - object.
@@ -1916,7 +1916,7 @@ EndFunc   ;==>_FFGetPosition
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFOpenURL
 ; Description ...: Opens a new URL
-; Beschreibung ..: Ã–ffnet eine URL.
+; Beschreibung ..: Öffnet eine URL.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFOpenURL($sURL[, $bLoadWait = True])
 ; Parameter(s): .: $sURL        - URL or chrome (shortcut)
@@ -1961,7 +1961,7 @@ EndFunc   ;==>_FFOpenURL
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFPrefReset
 ; Description ...: Resets a config entry
-; Beschreibung ..: Setzt einen Eintrag in der Config zurÃ¼ck
+; Beschreibung ..: Setzt einen Eintrag in der Config zurück
 ; Syntax ........: _FFPrefReset($sName)
 ; Parameter(s): .: $sName       - Name of the config entry
 ; Return Value ..: Success      - 1
@@ -1997,7 +1997,7 @@ EndFunc   ;==>_FFPrefReset
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFPrefGet
 ; Description ...: Gets a config entry
-; Beschreibung ..: LieÃŸt einen Wert aus der Config aus
+; Beschreibung ..: Ließt einen Wert aus der Config aus
 ; Syntax ........: _FFPrefGet($sName)
 ; Parameter(s): .: $sName       - Name of the config entry
 ; Return Value ..: Success      - Value of the entry
@@ -2106,7 +2106,7 @@ EndFunc   ;==>_FFPrefSet
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFQuit
 ; Description ...: Quits FireFox
-; Beschreibung ..: SchlieÃŸt FireFox
+; Beschreibung ..: Schließt FireFox
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFQuit()
 ; Parameter(s): .:
@@ -2292,7 +2292,7 @@ EndFunc   ;==>_FFSearch
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFCmd
 ; Description ...: Send and receive data from Firefox.
-; Beschreibung ..: Sendet und empfÃ¤ngt Daten von FireFox.
+; Beschreibung ..: Sendet und empfängt Daten von FireFox.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFCmd($sArg[, $iTimeOut = 30000[, $bTry = True[, $bRec = True]]])
 ; Parameter(s): .: $sArg        - Any JavaScript
@@ -2495,7 +2495,7 @@ EndFunc   ;==>_FFStart
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFTabAdd
 ; Description ...: Opens a new tab.
-; Beschreibung ..: Ã–ffnet einen neuen Tab
+; Beschreibung ..: Öffnet einen neuen Tab
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFTabAdd([$sURL = "about:blank"[, $bSelect = True[, $bLoadWait = True]]])
 ; Parameter(s): .: $sURL        - Optional: (Default = "about:blank") :
@@ -2537,7 +2537,7 @@ EndFunc   ;==>_FFTabAdd
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFTabClose
 ; Description ...: Closes one or all existing tabs.
-; Beschreibung ..: SchlieÃŸt einen oder alle vorhandenen Tabs.
+; Beschreibung ..: Schließt einen oder alle vorhandenen Tabs.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFTabClose([$vTab = -1[, $sMode = "index"]])
 ; Parameter(s): .: $vTab        - Optional: (Default = -1 = current tab) :
@@ -2683,7 +2683,7 @@ EndFunc   ;==>_FFTabDuplicate
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFTabExists
 ; Description ...: Checks if a tab exists
-; Beschreibung ..: PrÃ¼ft ob ein Tab existiert.
+; Beschreibung ..: Prüft ob ein Tab existiert.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFTabExists($sLabel)
 ; Parameter(s): .: $sLabel      - Label of the tab (substring or RegEx)
@@ -2748,7 +2748,7 @@ EndFunc   ;==>_FFTabExists
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFTabSetSelected
 ; Description ...: Select a tab
-; Beschreibung ..: WÃ¤hlt ein Tab aus.
+; Beschreibung ..: Wählt ein Tab aus.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFTabSetSelected([$vTab = 0[, $sMode = "index"]])
 ; Parameter(s): .: $vTab        - Optional: (Default = 0) :
@@ -2812,7 +2812,7 @@ EndFunc   ;==>_FFTabSetSelected
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFTabGetSelected
 ; Description ...: Returns the name or the index of the selected tab.
-; Beschreibung ..: Gibt den Namen (label) oder den Index des aktuellen Tabs zurÃ¼ck.
+; Beschreibung ..: Gibt den Namen (label) oder den Index des aktuellen Tabs zurück.
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFTabGetSelected([$sMode = "index"])
 ; Parameter(s): .: $sMode       - Optional: (Default = "index") :
@@ -3009,7 +3009,7 @@ EndFunc   ;==>_FFTableWriteToArray
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFWindowClose
 ; Description ...: Closes a browser window
-; Beschreibung ..: SchlieÃŸt ein Browser Fenster.
+; Beschreibung ..: Schließt ein Browser Fenster.
 ; Syntax ........: _FFWindowClose([$sSearch = ""[, $sSearchMode = "title"]])
 ; Parameter(s): .: $sSearch     - Optional: (Default = "") : "" = current window, Substring to search
 ;                  $sSearchMode - Optional: (Default = "title") :
@@ -3092,7 +3092,7 @@ EndFunc   ;==>_FFWindowGetHandle
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFWindowSelect
 ; Description ...: Selects the active window for all other functions
-; Beschreibung ..: WÃ¤hlt das aktive Browser Fenster fÃ¼r alle nachfolgenden Befehle.
+; Beschreibung ..: Wählt das aktive Browser Fenster für alle nachfolgenden Befehle.
 ; Syntax ........: _FFWindowSelect([$sSearch = ""[, $sSearchMode = "title"[, $bActivate = True]]])
 ; Parameter(s): .: $sSearch     - Optional: (Default = "") : "" = most recent window, Substring to search
 ;                  $sSearchMode - Optional: (Default = "title") :
@@ -3151,7 +3151,7 @@ EndFunc   ;==>_FFWindowSelect
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFWindowOpen
 ; Description ...: Opens a new browser window
-; Beschreibung ..: Ã–ffnet ein neues Browser Fenster.
+; Beschreibung ..: Öffnet ein neues Browser Fenster.
 ; Syntax ........: _FFWindowOpen([$sURL = "about:blank"[, $bActivate = True[, $bLoadWait = True]]])
 ; Parameter(s): .: $sURL        - Optional: (Default = "about:blank") :
 ;                  $bActivate   - Optional: (Default = True)
@@ -3563,7 +3563,7 @@ EndFunc   ;==>_FFObjDelete
 ; #FUNCTION# ===================================================================
 ; Name ..........: _FFAu3Option
 ; Description ...: Sets and get options for the FF.au3
-; Beschreibung ..: Abfrage und Setzen von Optionen fÃ¼r die FF.au3
+; Beschreibung ..: Abfrage und Setzen von Optionen für die FF.au3
 ; AutoIt Version : V3.3.0.0
 ; Syntax ........: _FFAu3Option($sOption[, $vValue = ""])
 ; Parameter(s): .: $sOption     - LoadWaitTimeOut
@@ -4292,21 +4292,20 @@ EndFunc   ;==>__FFWaitForRepl
 ; Name ..........: __FFStartProcess
 ; Description ...: Starts the firefox.exe
 ; AutoIt Version : V3.3.0.0
-; Syntax ........: __FFStartProcess([$sURL = "about:blank"[, $bNewWin = False[, $sProfile = "default"[, $bNoRemote = False[, $bHide = False[, $iPort = 4242[, $iTimeOut = 30000]]]]]]])
-; Parameter(s): .: $sProfile    - Optional: (Default = "default") :
-;                  $bNewWin     - Optional: (Default = false) :
-;                  $bNoRemote   - Optional: (Default = false) :
-;                  $bHide       - Optional: (Default = False) :
-;                  $iPort       - Optional: (Default = 4242) :
-;                  $iTimeOut    - Optional: (Default = 30000) : min. 2000ms
-; Return Value ..: Success      - 1
-;                  Failure      - 0
-;                  @ERROR       -
-;                  @EXTENDED    - PID from the firefox.exe
+; Syntax ........: __FFStartProcess([$sURL = "about:blank"[, $bNewWin = False[, $sProfile = "default"[, $bNoRemote = False[, $bHide = False[, $iTimeOut = 30000]]]]]])
+; Parameter(s): .: $sProfile	- Optional: (Default = "default") :
+;				  $bNewWin	 - Optional: (Default = false) :
+;				  $bNoRemote   - Optional: (Default = false) :
+;				  $bHide	   - Optional: (Default = False) :
+;				  $iTimeOut	- Optional: (Default = 30000) : min. 2000ms
+; Return Value ..: Success	  - 1
+;				  Failure	  - 0
+;				  @ERROR	   -
+;				  @EXTENDED	- PID from the firefox.exe
 ; Author(s) .....: Thorsten Willert
 ; Date ..........: Wed Nov 04 16:01:59 CET 2009
 ; ==============================================================================
-Func __FFStartProcess($sURL = "about:blank", $bNewWin = False, $sProfile = "default", $bNoRemote = False, $bHide = False, $iPort = 4242, $iTimeOut = 30000)
+Func __FFStartProcess($sURL = "about:blank", $bNewWin = False, $sProfile = "default", $bNoRemote = False, $bHide = False, $iTimeOut = 30000)
 	Local Const $sFuncName = "__FFStartProcess"
 
 	Local $PID = -1
@@ -4323,20 +4322,18 @@ Func __FFStartProcess($sURL = "about:blank", $bNewWin = False, $sProfile = "defa
 	$sURL = '"' & $sURL & '"'
 	If $iTimeOut < 2000 Then $iTimeOut = 2000
 
-
-	Local $sHKLM = 'HKEY_LOCAL_MACHINE\SOFTWARE\'
-	If @OSArch <> 'X86' Then $sHKLM &= 'Wow6432Node\'
-	$sHKLM &= 'Mozilla\Mozilla Firefox'
-	Local $sFFExe = RegRead($sHKLM & "" & RegRead($sHKLM, "CurrentVersion") & "\Main", "PathToExe")
+	Local $sHKLM = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe"
+ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sHKLM = ' & $sHKLM & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
+	Local $sFFExe = RegRead($sHKLM, "")
+ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sFFExe = ' & $sFFExe & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
 	If @error Then
 		SetError(__FFError($sFuncName, $_FF_ERROR_GeneralError, "Error reading registry entry for FireFox." & @CRLF & _
-				$sHKLM & "\*CurrentVersion*\Main\PathToExe" & @CRLF & _
+				"HKEY_LOCAL_MACHINE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe" & @CRLF & _
 				"Error from RegRead: " & @error))
 		Return 0
 	EndIf
 
-	; Updated per http://www.autoitscript.com/forum/topic/95595-ffau3-v0600b/page__st__380#entry958812
-	Local $sCommand = StringFormat('"%s" %s %s %s "-repl %i %s"', $sFFExe, $sNewWin, $sURL, $sNoRemote, $iPort, $sProfile)
+	Local $sCommand = StringFormat('"%s" %s %s %s %s', $sFFExe, $sNewWin, $sURL, $sNoRemote, $sProfile)
 	$PID = Run($sCommand)
 	If $bHide Then BlockInput(1)
 
