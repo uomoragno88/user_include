@@ -1,5 +1,6 @@
 ; :wrap=none:collapseFolds=1:maxLineLen=80:mode=autoitscript:tabSize=8:folding=indent:
 ; created with jEdit4AutoIt
+; modificata la func __FFStartProcess in base a: http://www.autoitscript.com/forum/topic/138860-probl%C3%A8me-with-_ffstart/
 #include-once
 #Tidy_Off
 #Region Copyright
@@ -4304,6 +4305,7 @@ EndFunc   ;==>__FFWaitForRepl
 ;				  @EXTENDED	- PID from the firefox.exe
 ; Author(s) .....: Thorsten Willert
 ; Date ..........: Wed Nov 04 16:01:59 CET 2009
+; modificata la func __FFStartProcess in base a: http://www.autoitscript.com/forum/topic/138860-probl%C3%A8me-with-_ffstart/
 ; ==============================================================================
 Func __FFStartProcess($sURL = "about:blank", $bNewWin = False, $sProfile = "default", $bNoRemote = False, $bHide = False, $iTimeOut = 30000)
 	Local Const $sFuncName = "__FFStartProcess"
@@ -4323,9 +4325,9 @@ Func __FFStartProcess($sURL = "about:blank", $bNewWin = False, $sProfile = "defa
 	If $iTimeOut < 2000 Then $iTimeOut = 2000
 
 	Local $sHKLM = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe"
-ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sHKLM = ' & $sHKLM & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
+;~ ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sHKLM = ' & $sHKLM & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
 	Local $sFFExe = RegRead($sHKLM, "")
-ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sFFExe = ' & $sFFExe & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
+;~ ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sFFExe = ' & $sFFExe & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
 	If @error Then
 		SetError(__FFError($sFuncName, $_FF_ERROR_GeneralError, "Error reading registry entry for FireFox." & @CRLF & _
 				"HKEY_LOCAL_MACHINE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe" & @CRLF & _
