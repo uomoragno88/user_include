@@ -4328,11 +4328,14 @@ Func __FFStartProcess($sURL = "about:blank", $bNewWin = False, $sProfile = "defa
 ;~ ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sHKLM = ' & $sHKLM & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
 	Local $sFFExe = RegRead($sHKLM, "")
 ;~ ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sFFExe = ' & $sFFExe & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
-	If @error Then
-		SetError(__FFError($sFuncName, $_FF_ERROR_GeneralError, "Error reading registry entry for FireFox." & @CRLF & _
-				"HKEY_LOCAL_MACHINE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe" & @CRLF & _
-				"Error from RegRead: " & @error))
-		Return 0
+	If $sFFExe = "" Then ; my firefox portable dir
+		$sFFExe = IniRead(@ScriptDir & "\Data\config.ini", "config", "app_paths", "default")
+;~ 		SetError(__FFError($sFuncName, $_FF_ERROR_GeneralError, "Error reading registry entry for FireFox." & @CRLF & _
+;~ 				"HKEY_LOCAL_MACHINE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe" & @CRLF & _
+;~ 				"Error from RegRead: " & @error))
+;~ 		Return 0
+;~ ConsoleWrite('@@ Debug(' & @ScriptLineNumber & ') : $sFFExe = ' & $sFFExe & @crlf & '>Error code: ' & @error & @crlf) ;### Debug Console
+		
 	EndIf
 
 	Local $sCommand = StringFormat('"%s" %s %s %s %s', $sFFExe, $sNewWin, $sURL, $sNoRemote, $sProfile)
